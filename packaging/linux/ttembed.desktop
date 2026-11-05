@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=TTEmbed 2.0
+GenericName=Font Embedding Permission Manager
+Comment=Inspect and modify OpenType / TrueType fsType embedding permissions
+Exec=ttembed %F
+Icon=ttembed
+Terminal=false
+Categories=Graphics;Utility;
+MimeType=font/ttf;font/otf;font/collection;

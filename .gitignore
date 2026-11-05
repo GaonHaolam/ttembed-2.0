@@ -1,0 +1,10 @@
+# Build artifacts and binaries (hosted via GitHub Releases)
+dist/
+build/
+*.spec
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.DS_Store
+Thumbs.db
