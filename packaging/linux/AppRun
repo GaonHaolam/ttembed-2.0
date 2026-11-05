@@ -1,0 +1,6 @@
+#!/bin/sh
+SELF=$(readlink -f "$0")
+HERE=${SELF%/*}
+export PATH="${HERE}/usr/bin:${PATH}"
+export PYTHONPATH="${HERE}/src:${PYTHONPATH}"
+exec python3 "${HERE}/src/app_gui.py" "$@"

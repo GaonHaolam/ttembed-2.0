@@ -1,0 +1,9 @@
+#!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+RESOURCES_DIR="$DIR/../Resources"
+export PYTHONPATH="$RESOURCES_DIR/src:$PYTHONPATH"
+if command -v python3 >/dev/null 2>&1; then
+    exec python3 "$RESOURCES_DIR/src/app_gui.py" "$@"
+else
+    osascript -e 'display dialog "Python 3 is required to run TTEmbed 2.0. Please install Python 3 or run via homebrew: brew install python." buttons {"OK"} default button "OK" with icon stop'
+fi
